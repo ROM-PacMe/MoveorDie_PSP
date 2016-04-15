@@ -24,7 +24,7 @@ int main(){
          else if(pad.Buttons & PSP_CTRL_CROSS) { printf("Equis"); }
          else pspDebugScreenClear ();
          
-         printf(" x = &d    y = &d" , pad.Lx , pad.Ly);
+         printf(" x = %d    y = %d" , pad.Lx , pad.Ly);
          
          for(i =0 ; i < 5; i++) sceDisplayWaitVblankStart();
      }
